@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7fea)agzt#$+opj(@%htikxso#%(b-6os8n56a9uw*o9&yjm75'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #ALLOWED_HOSTS = ['www.bryonseverns.xyz']
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['bryonseverns.pythonanywhere.com']
 
 
 # Application definition
