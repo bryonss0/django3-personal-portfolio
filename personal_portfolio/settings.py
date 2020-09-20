@@ -17,12 +17,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7fea)agzt#$+opj(@%htikxso#%(b-6os8n56a9uw*o9&yjm75'
+SECRET_KEY = '7fea)agjkljlkjzt#$+opj(@%htikxso#%(b-6os8n5675756a9uw*o9&yjm75'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#ALLOWED_HOSTS = ['www.bryonseverns.xyz']
+#ALLOWED_HOSTS = []  #empty brackets [] or  ['localhost']
 ALLOWED_HOSTS = ['bryonseverns.pythonanywhere.com']
 
 
@@ -126,4 +126,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 try:
     from .local_settings import *
 except ImportError:
-    print("Looks like no local file. You must be on production")
+    print("ALLOWED_HOSTS not set to localhost. You must be on production")
