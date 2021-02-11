@@ -3,8 +3,6 @@ from .models import Blog
 
 
 def all_blogs(request):
-    #blogs = Blog.objects.all() #shows all blogs in order
-    #blogs = Blog.objects.reverse()[:5]
     blogs = Blog.objects.order_by('-date') # -date = newest to oldest
     return render(request, 'blog/all_blogs.html', {'blogs':blogs})
 
